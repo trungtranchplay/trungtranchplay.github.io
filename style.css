@@ -1,0 +1,22 @@
+:root{
+  --nen:#0f1115; --chu:#e6e8ee; --mo:#9aa3b2; --vien:#242a35; --nhan:#7aa2f7;
+}
+@media (prefers-color-scheme: light){
+  :root{ --nen:#ffffff; --chu:#1b1f27; --mo:#5b6473; --vien:#e3e7ee; --nhan:#2f5fd0; }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--nen); color:var(--chu);
+  font:16px/1.7 -apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  padding:0 16px;
+}
+.khung{max-width:720px;margin:0 auto;padding:56px 0 72px}
+h1{font-size:28px;line-height:1.3;margin:0 0 8px}
+h2{font-size:19px;margin:32px 0 8px}
+.phu{color:var(--mo);margin:0 0 28px}
+a{color:var(--nhan)}
+ul{padding-left:20px}
+li{margin:6px 0}
+nav{border-top:1px solid var(--vien);margin-top:40px;padding-top:16px;font-size:14px}
+nav a{margin-right:16px}
+code{background:var(--vien);padding:2px 6px;border-radius:4px;font-size:14px}

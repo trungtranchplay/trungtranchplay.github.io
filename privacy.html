@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chính sách bảo mật — VTP</title>
+<meta name="description" content="Chính sách bảo mật của VTP: dữ liệu nằm trên máy người dùng, không chia sẻ cho bên thứ ba.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="khung">
+  <h1>Chính sách bảo mật</h1>
+  <p class="phu">Cập nhật lần cuối: 28/09/2026</p>
+
+  <p>VTP (“ứng dụng”) là công cụ cá nhân chạy trên máy tính của chính người dùng. Ứng dụng
+  không có máy chủ trung tâm, không có tài khoản thành viên và không phục vụ người dùng
+  nào khác ngoài chủ sở hữu bản cài đặt.</p>
+
+  <h2>Dữ liệu ứng dụng chạm tới</h2>
+  <ul>
+    <li><strong>Video, phụ đề, giọng đọc</strong> do người dùng tự đưa vào. Tất cả nằm trong
+    thư mục trên máy người dùng.</li>
+    <li><strong>Mã truy cập Google (OAuth token)</strong> sau khi người dùng đồng ý cấp quyền.
+    Token được lưu trong tệp cấu hình trên chính máy đó, chỉ dùng để gọi YouTube Data API.</li>
+    <li><strong>Tên và mã kênh YouTube</strong> đọc bằng quyền <code>youtube.readonly</code>,
+    chỉ để hiển thị trong giao diện cho biết đang kết nối đúng kênh.</li>
+  </ul>
+
+  <h2>Dữ liệu được dùng như thế nào</h2>
+  <ul>
+    <li>Quyền <code>youtube.upload</code> chỉ dùng để tải lên kênh của chính người dùng những
+    video do người dùng bấm đăng.</li>
+    <li>Ứng dụng không đọc, không sửa, không xoá video có sẵn trên kênh.</li>
+    <li>Ứng dụng không gửi dữ liệu người dùng cho bên thứ ba nào, không bán, không dùng cho
+    quảng cáo, không dùng để huấn luyện mô hình.</li>
+  </ul>
+
+  <h2>Dịch vụ bên ngoài</h2>
+  <p>Khi người dùng chọn dùng các bước có gọi dịch vụ bên ngoài (nhận dạng lời thoại, dịch
+  thuật, tạo giọng đọc), phần nội dung cần xử lý sẽ được gửi tới đúng dịch vụ đó theo điều
+  khoản của họ. Mã truy cập Google không bao giờ được gửi ra ngoài.</p>
+
+  <h2>Lưu trữ và xoá</h2>
+  <p>Mọi dữ liệu nằm trên máy người dùng. Người dùng xoá bằng cách xoá tệp, hoặc thu hồi
+  quyền của ứng dụng bất cứ lúc nào tại
+  <a href="https://myaccount.google.com/permissions">Google Account &rarr; Quyền của bên thứ ba</a>.
+  Thu hồi xong thì mã truy cập hết hiệu lực ngay.</p>
+
+  <h2>Việc tuân thủ YouTube</h2>
+  <p>Ứng dụng dùng YouTube API Services. Khi dùng ứng dụng, người dùng đồng thời chịu ràng
+  buộc của <a href="https://www.youtube.com/t/terms">Điều khoản dịch vụ YouTube</a> và
+  <a href="https://policies.google.com/privacy">Chính sách bảo mật của Google</a>.</p>
+
+  <h2>Liên hệ</h2>
+  <p>Mọi thắc mắc: <a href="mailto:t.reviewgame@gmail.com">t.reviewgame@gmail.com</a></p>
+
+  <nav>
+    <a href="./index.html">Trang chủ</a>
+    <a href="./privacy.html">Chính sách bảo mật</a>
+    <a href="./terms.html">Điều khoản sử dụng</a>
+    <a href="mailto:t.reviewgame@gmail.com">Liên hệ</a>
+  </nav>
+</div>
+</body>
+</html>
